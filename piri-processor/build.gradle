@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+//	implementation 'com.google.guava:guava:26.0-jre'
+//	api 'com.google.guava:guava:26.0-android'
+//	implementation 'com.google.guava:guava:22.0'
+	implementation 'com.google.auto.service:auto-service:1.0-rc4'
+	implementation 'com.squareup:javapoet:1.11.1'
+	implementation project(':piri-annotation')
+	
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
